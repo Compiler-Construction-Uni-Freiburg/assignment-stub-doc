@@ -35,7 +35,7 @@ Contains the abstract syntax tree for x86 programs, used by the x86 interpreter 
 - Creates a `Compiler` object and calls `run_tests` from `utils.py` to execute tests.
 - To run tests for a new language, e.g. `lang` (with tests in the directory `/tests/lang`), add the following line to the bottom of the file: `run_tests("lang", compiler, "lang", None, interp_Pvar.InterpPvar().interp_P, None, None)`
 ## `run_tests` function inside `utils.py`: 
-- Parameters: language, `Compiler` object, type checker, interpreter. Also takes type checker and interpreter for an intermediate language, which can be ignored (for now).
+- Parameters: language, `Compiler` object, type checker, interpreter. Also takes type checker and interpreter for an intermediate language, which can be ignored.
 - Function: Executes all tests found in `/tests/language` folder. This is done using `run_one_test`/`compile_and_test`.
 ## Function(s) `run_one_test`/`compile_and_test` inside `utils.py`:
 - Runs all relevant passes of the `Compiler` object on a test
